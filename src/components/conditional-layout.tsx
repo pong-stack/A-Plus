@@ -11,7 +11,7 @@ interface ConditionalLayoutProps {
 export function ConditionalLayout({ children }: ConditionalLayoutProps) {
   const pathname = usePathname();
   const isAdminRoute = pathname?.startsWith('/admin');
-
+  
   return (
     <div className={`min-h-screen flex flex-col ${
       isAdminRoute 
