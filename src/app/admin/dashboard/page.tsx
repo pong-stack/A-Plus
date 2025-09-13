@@ -41,7 +41,7 @@ export default function AdminDashboard() {
     console.log("Auth check: authLoading=", authLoading, "isAdmin=", isAdmin)
     if (!authLoading && !isAdmin) {
       console.log("Redirecting to login: authLoading=", authLoading, "isAdmin=", isAdmin)
-      router.push("/admin/login")
+      router.push("/login")
     }
   }, [authLoading, isAdmin, router])
 
